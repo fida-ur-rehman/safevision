@@ -1,0 +1,58 @@
+[
+ {
+  "box": [
+   140.0,
+   140.0,
+   270.0,
+   565.0
+  ],
+  "source": "person",
+  "person_conf": 0.91,
+  "helmet": "yes",
+  "helmet_conf": 0.88,
+  "vest": "no",
+  "vest_conf": 0.91
+ },
+ {
+  "box": [
+   410.0,
+   150.0,
+   540.0,
+   565.0
+  ],
+  "source": "person",
+  "person_conf": 0.93,
+  "helmet": "no",
+  "helmet_conf": 0.81,
+  "vest": "no",
+  "vest_conf": 0.93
+ },
+ {
+  "box": [
+   690.0,
+   140.0,
+   820.0,
+   565.0
+  ],
+  "source": "person",
+  "person_conf": 0.89,
+  "helmet": "unsure",
+  "helmet_conf": 0.3,
+  "vest": "unsure",
+  "vest_conf": 0.3
+ },
+ {
+  "box": [
+   900.0,
+   120.0,
+   950.0,
+   180.0
+  ],
+  "source": "head-only",
+  "person_conf": 0.0,
+  "helmet": "no",
+  "helmet_conf": 0.72,
+  "vest": "unsure",
+  "vest_conf": 0.0
+ }
+]

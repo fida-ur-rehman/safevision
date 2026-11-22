@@ -1,0 +1,83 @@
+{
+ "input_workers": "workers_example.json",
+ "situation": "construction site with 4 workers; 2 workers without a hard hat (head protection); 2 workers without a high-visibility vest.",
+ "facts": [
+  "The photo shows 4 workers.",
+  "2 workers are not wearing a hard hat.",
+  "1 worker is wearing a hard hat.",
+  "For 1 worker, it is unclear whether a hard hat is worn.",
+  "2 workers are not wearing a high-visibility vest."
+ ],
+ "counts": {
+  "workers": 4,
+  "no_helmet": 2,
+  "helmet_unsure": 1,
+  "helmet_ok": 1,
+  "no_vest": 2,
+  "vest_ok": 0
+ },
+ "classifier_prediction": {
+  "event_group": [
+   [
+    "Contact with objects or equipment",
+    0.46
+   ],
+   [
+    "Fall, slip or trip",
+    0.31
+   ],
+   [
+    "Transportation incident",
+    0.08
+   ]
+  ],
+  "body_group": [
+   [
+    "Head",
+    0.38
+   ],
+   [
+    "Upper limbs",
+    0.22
+   ],
+   [
+    "Trunk",
+    0.14
+   ]
+  ],
+  "severity": [
+   [
+    "hospitalised",
+    0.83
+   ],
+   [
+    "severe (amputation/eye loss)",
+    0.17
+   ]
+  ]
+ },
+ "risk_sentences": [
+  "In similar past OSHA reports, the most likely accident type is Contact with objects or equipment (probability 0.46).",
+  "In similar past OSHA reports, the most likely injured body part is Head (probability 0.38).",
+  "In similar past OSHA reports, the most likely severity is hospitalised (probability 0.83)."
+ ],
+ "rules": [
+  {
+   "section": "1926.100",
+   "heading": "1926.100 Head protection.",
+   "source": "OSHA 29 CFR 1926",
+   "text": "1926.100 Head protection. (Personal protective equipment). (a) Employees working in areas where there is a possible danger of head injury from impact, or from falling or flying objects, or from electrical shock and burns, shall be protected by protective helmets."
+  }
+ ],
+ "llm_messages": [
+  {
+   "role": "system",
+   "content": "You are a construction safety officer writing a short incident report from an automated site-photo check. Use ONLY the facts in FINDINGS, RULES and RISK. Do not invent numbers, people, places, dates or rules. Cite a rule only by a section number that appears in RULES, in square brackets, e.g. [1926.100]. If something is unclear in the findings, say it is unclear. Keep it under 180 words. Use exactly these headings, each on its own line: Summary:, Violations:, Applicable rules:, Likely accident risk:, Corrective actions:"
+  },
+  {
+   "role": "user",
+   "content": "FINDINGS:\n- The photo shows 4 workers.\n- 2 workers are not wearing a hard hat.\n- 1 worker is wearing a hard hat.\n- For 1 worker, it is unclear whether a hard hat is worn.\n- 2 workers are not wearing a high-visibility vest.\n\nRULES:\n[1926.100] 1926.100 Head protection. (Personal protective equipment). (a) Employees working in areas where there is a possible danger of head injury from impact, or from falling or flying objects, or from electrical shock and burns, shall be protected by protective helmets.\n\nRISK:\n- In similar past OSHA reports, the most likely accident type is Contact with objects or equipment (probability 0.46).\n- In similar past OSHA reports, the most likely injured body part is Head (probability 0.38).\n- In similar past OSHA reports, the most likely severity is hospitalised (probability 0.83).\n\nWrite the incident report now."
+  }
+ ],
+ "template_report": "Summary:\nThe photo shows 4 workers.\nViolations:\n- 2 workers are not wearing a hard hat.\n- 1 worker is wearing a hard hat.\n- For 1 worker, it is unclear whether a hard hat is worn.\n- 2 workers are not wearing a high-visibility vest.\nApplicable rules:\n- [1926.100] 1926.100 Head protection.\nLikely accident risk:\n- In similar past OSHA reports, the most likely accident type is Contact with objects or equipment (probability 0.46).\n- In similar past OSHA reports, the most likely injured body part is Head (probability 0.38).\n- In similar past OSHA reports, the most likely severity is hospitalised (probability 0.83).\nCorrective actions:\n- Stop work for the affected workers until the missing protective equipment is worn."
+}

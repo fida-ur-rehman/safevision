@@ -1,0 +1,52 @@
+experiment,run,model,text_version,dataset,split,target,metric,value,notes,timestamp
+E5,E5a_tfidf_full,TF-IDF+LogReg,full,OSHA-SIR construction,test,event_group,macro_F1,0.7323,,2026-11-19T19:10:21
+E5,E5a_tfidf_full,TF-IDF+LogReg,full,OSHA-SIR construction,test,event_group,weighted_F1,0.9103,,2026-11-19T19:10:21
+E5,E5a_tfidf_full,TF-IDF+LogReg,full,OSHA-SIR construction,test,event_group,accuracy,0.9095,,2026-11-19T19:10:21
+E5,E5a_tfidf_full,TF-IDF+LogReg,full,OSHA-SIR construction,test,body_group,macro_F1,0.7572,,2026-11-19T19:10:36
+E5,E5a_tfidf_full,TF-IDF+LogReg,full,OSHA-SIR construction,test,body_group,weighted_F1,0.8071,,2026-11-19T19:10:36
+E5,E5a_tfidf_full,TF-IDF+LogReg,full,OSHA-SIR construction,test,body_group,accuracy,0.7993,,2026-11-19T19:10:36
+E5,E5a_tfidf_full,TF-IDF+LogReg,full,OSHA-SIR construction,test,severity,macro_F1,0.9534,,2026-11-19T19:10:38
+E5,E5a_tfidf_full,TF-IDF+LogReg,full,OSHA-SIR construction,test,severity,weighted_F1,0.975,,2026-11-19T19:10:38
+E5,E5a_tfidf_full,TF-IDF+LogReg,full,OSHA-SIR construction,test,severity,accuracy,0.9746,,2026-11-19T19:10:38
+E5,E5a_tfidf_outcome-masked,TF-IDF+LogReg,outcome-masked,OSHA-SIR construction,test,event_group,macro_F1,0.7292,,2026-11-19T19:10:49
+E5,E5a_tfidf_outcome-masked,TF-IDF+LogReg,outcome-masked,OSHA-SIR construction,test,event_group,weighted_F1,0.909,,2026-11-19T19:10:49
+E5,E5a_tfidf_outcome-masked,TF-IDF+LogReg,outcome-masked,OSHA-SIR construction,test,event_group,accuracy,0.908,,2026-11-19T19:10:49
+E5,E5a_tfidf_outcome-masked,TF-IDF+LogReg,outcome-masked,OSHA-SIR construction,test,body_group,macro_F1,0.734,,2026-11-19T19:11:03
+E5,E5a_tfidf_outcome-masked,TF-IDF+LogReg,outcome-masked,OSHA-SIR construction,test,body_group,weighted_F1,0.7905,,2026-11-19T19:11:03
+E5,E5a_tfidf_outcome-masked,TF-IDF+LogReg,outcome-masked,OSHA-SIR construction,test,body_group,accuracy,0.7817,,2026-11-19T19:11:03
+E5,E5a_tfidf_outcome-masked,TF-IDF+LogReg,outcome-masked,OSHA-SIR construction,test,severity,macro_F1,0.9093,,2026-11-19T19:11:04
+E5,E5a_tfidf_outcome-masked,TF-IDF+LogReg,outcome-masked,OSHA-SIR construction,test,severity,weighted_F1,0.9504,,2026-11-19T19:11:04
+E5,E5a_tfidf_outcome-masked,TF-IDF+LogReg,outcome-masked,OSHA-SIR construction,test,severity,accuracy,0.9488,,2026-11-19T19:11:04
+E5,E5a_tfidf_context-only,TF-IDF+LogReg,context-only,OSHA-SIR construction,test,event_group,macro_F1,0.6994,,2026-11-19T19:11:18
+E5,E5a_tfidf_context-only,TF-IDF+LogReg,context-only,OSHA-SIR construction,test,event_group,weighted_F1,0.887,,2026-11-19T19:11:18
+E5,E5a_tfidf_context-only,TF-IDF+LogReg,context-only,OSHA-SIR construction,test,event_group,accuracy,0.8855,,2026-11-19T19:11:18
+E5,E5a_tfidf_context-only,TF-IDF+LogReg,context-only,OSHA-SIR construction,test,body_group,macro_F1,0.7365,,2026-11-19T19:11:34
+E5,E5a_tfidf_context-only,TF-IDF+LogReg,context-only,OSHA-SIR construction,test,body_group,weighted_F1,0.7938,,2026-11-19T19:11:34
+E5,E5a_tfidf_context-only,TF-IDF+LogReg,context-only,OSHA-SIR construction,test,body_group,accuracy,0.7844,,2026-11-19T19:11:34
+E5,E5a_tfidf_context-only,TF-IDF+LogReg,context-only,OSHA-SIR construction,test,severity,macro_F1,0.9116,,2026-11-19T19:11:35
+E5,E5a_tfidf_context-only,TF-IDF+LogReg,context-only,OSHA-SIR construction,test,severity,weighted_F1,0.9515,,2026-11-19T19:11:35
+E5,E5a_tfidf_context-only,TF-IDF+LogReg,context-only,OSHA-SIR construction,test,severity,accuracy,0.9498,,2026-11-19T19:11:35
+E5,E5b_distilbert_full,distilbert-base-uncased,full,OSHA-SIR construction,test,event_group,macro_F1,0.7672,best val mean macro-F1=0.9116,2026-11-19T19:27:08
+E5,E5b_distilbert_full,distilbert-base-uncased,full,OSHA-SIR construction,test,event_group,weighted_F1,0.9423,best val mean macro-F1=0.9116,2026-11-19T19:27:08
+E5,E5b_distilbert_full,distilbert-base-uncased,full,OSHA-SIR construction,test,event_group,accuracy,0.9445,best val mean macro-F1=0.9116,2026-11-19T19:27:08
+E5,E5b_distilbert_full,distilbert-base-uncased,full,OSHA-SIR construction,test,body_group,macro_F1,0.889,best val mean macro-F1=0.9116,2026-11-19T19:27:09
+E5,E5b_distilbert_full,distilbert-base-uncased,full,OSHA-SIR construction,test,body_group,weighted_F1,0.9161,best val mean macro-F1=0.9116,2026-11-19T19:27:09
+E5,E5b_distilbert_full,distilbert-base-uncased,full,OSHA-SIR construction,test,body_group,accuracy,0.9152,best val mean macro-F1=0.9116,2026-11-19T19:27:09
+E5,E5b_distilbert_full,distilbert-base-uncased,full,OSHA-SIR construction,test,severity,macro_F1,0.9903,best val mean macro-F1=0.9116,2026-11-19T19:27:09
+E5,E5b_distilbert_full,distilbert-base-uncased,full,OSHA-SIR construction,test,severity,weighted_F1,0.9949,best val mean macro-F1=0.9116,2026-11-19T19:27:09
+E5,E5b_distilbert_full,distilbert-base-uncased,full,OSHA-SIR construction,test,severity,accuracy,0.9949,best val mean macro-F1=0.9116,2026-11-19T19:27:09
+E5,E5c_distilbert_context_only,distilbert-base-uncased,context-only,OSHA-SIR construction,test,event_group,macro_F1,0.7707,best val mean macro-F1=0.8631,2026-11-19T19:42:00
+E5,E5c_distilbert_context_only,distilbert-base-uncased,context-only,OSHA-SIR construction,test,event_group,weighted_F1,0.9271,best val mean macro-F1=0.8631,2026-11-19T19:42:00
+E5,E5c_distilbert_context_only,distilbert-base-uncased,context-only,OSHA-SIR construction,test,event_group,accuracy,0.9304,best val mean macro-F1=0.8631,2026-11-19T19:42:00
+E5,E5c_distilbert_context_only,distilbert-base-uncased,context-only,OSHA-SIR construction,test,body_group,macro_F1,0.8589,best val mean macro-F1=0.8631,2026-11-19T19:42:00
+E5,E5c_distilbert_context_only,distilbert-base-uncased,context-only,OSHA-SIR construction,test,body_group,weighted_F1,0.8977,best val mean macro-F1=0.8631,2026-11-19T19:42:00
+E5,E5c_distilbert_context_only,distilbert-base-uncased,context-only,OSHA-SIR construction,test,body_group,accuracy,0.8968,best val mean macro-F1=0.8631,2026-11-19T19:42:00
+E5,E5c_distilbert_context_only,distilbert-base-uncased,context-only,OSHA-SIR construction,test,severity,macro_F1,0.9404,best val mean macro-F1=0.8631,2026-11-19T19:42:00
+E5,E5c_distilbert_context_only,distilbert-base-uncased,context-only,OSHA-SIR construction,test,severity,weighted_F1,0.9687,best val mean macro-F1=0.8631,2026-11-19T19:42:00
+E5,E5c_distilbert_context_only,distilbert-base-uncased,context-only,OSHA-SIR construction,test,severity,accuracy,0.9689,best val mean macro-F1=0.8631,2026-11-19T19:42:00
+E7,E7_random,random (floor),context-only,OSHA-SIR construction,test,event_group,precision_at_3,0.3162,,2026-11-19T19:46:28
+E7,E7_random,random (floor),context-only,OSHA-SIR construction,test,event+body,precision_at_3,0.0883,,2026-11-19T19:46:28
+E7,E7_BM25,BM25 keyword,context-only,OSHA-SIR construction,test,event_group,precision_at_3,0.7767,,2026-11-19T19:46:29
+E7,E7_BM25,BM25 keyword,context-only,OSHA-SIR construction,test,event+body,precision_at_3,0.3843,,2026-11-19T19:46:29
+E7,E7_bge-small,bge-small embeddings,context-only,OSHA-SIR construction,test,event_group,precision_at_3,0.7973,,2026-11-19T19:46:29
+E7,E7_bge-small,bge-small embeddings,context-only,OSHA-SIR construction,test,event+body,precision_at_3,0.4977,,2026-11-19T19:46:29

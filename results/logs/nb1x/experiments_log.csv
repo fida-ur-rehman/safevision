@@ -1,0 +1,134 @@
+experiment,run,model,imgsz,dataset,split,class_name,metric,value,notes,timestamp
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,all,precision,0.8372,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,all,recall,0.7284,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,all,mAP50,0.7849,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,all,mAP50_95,0.5489,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,person,precision,0.8914,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,person,recall,0.8797,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,person,mAP50,0.9157,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,person,mAP50_95,0.7374,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,head,precision,0.9321,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,head,recall,0.8953,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,head,mAP50,0.9282,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,head,mAP50_95,0.7152,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,helmet,precision,0.8081,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,helmet,recall,0.6429,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,helmet,mAP50,0.7546,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,helmet,mAP50_95,0.5302,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,vest,precision,0.5882,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,vest,recall,0.4433,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,vest,mAP50,0.4927,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,vest,mAP50_95,0.293,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,hands,precision,0.9039,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,hands,recall,0.8303,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,hands,mAP50,0.8833,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,hands,mAP50_95,0.6155,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,gloves,precision,0.7886,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,gloves,recall,0.5501,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,gloves,mAP50,0.6393,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,gloves,mAP50_95,0.4044,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,face,precision,0.9587,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,face,recall,0.889,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,face,mAP50,0.9334,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,face,mAP50_95,0.7,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,glasses,precision,0.8269,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,glasses,recall,0.6963,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,glasses,mAP50,0.7317,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,glasses,mAP50_95,0.3957,,2026-11-22T01:12:45
+E1x,E1x_yolo11s_960_ppe8,YOLO11s-8cls,960,SH17,test,all,inference_ms_per_image,16.9853,,2026-11-22T01:12:45
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,all,precision,0.8086,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,all,recall,0.7308,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,all,mAP50,0.7864,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,all,mAP50_95,0.5539,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,person,precision,0.8642,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,person,recall,0.8871,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,person,mAP50,0.9196,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,person,mAP50_95,0.7602,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,head,precision,0.9241,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,head,recall,0.897,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,head,mAP50,0.9299,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,head,mAP50_95,0.7155,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,helmet,precision,0.7695,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,helmet,recall,0.6429,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,helmet,mAP50,0.7543,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,helmet,mAP50_95,0.5303,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,vest,precision,0.5548,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,vest,recall,0.4536,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,vest,mAP50,0.5017,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,vest,mAP50_95,0.2964,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,hands,precision,0.8614,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,hands,recall,0.8378,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,hands,mAP50,0.8827,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,hands,mAP50_95,0.6198,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,gloves,precision,0.7411,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,gloves,recall,0.568,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,gloves,mAP50,0.6525,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,gloves,mAP50_95,0.4156,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,face,precision,0.9465,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,face,recall,0.8916,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,face,mAP50,0.9317,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,face,mAP50_95,0.7006,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,glasses,precision,0.8075,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,glasses,recall,0.6683,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,glasses,mAP50,0.7191,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,glasses,mAP50_95,0.3926,test-time augmentation,2026-11-22T01:14:23
+E1x,E1x_TTA_on_E1x,E1x+TTA,960,SH17,test,all,inference_ms_per_image,37.1227,test-time augmentation,2026-11-22T01:14:23
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,all,precision,0.8495,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,all,recall,0.7779,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,all,mAP50,0.8338,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,all,mAP50_95,0.4217,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,person,precision,0.8502,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,person,recall,0.8747,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,person,mAP50,0.8838,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,person,mAP50_95,0.4442,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,helmet,precision,0.9278,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,helmet,recall,0.7476,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,helmet,mAP50,0.8642,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,helmet,mAP50_95,0.4579,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,vest,precision,0.7706,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,vest,recall,0.7113,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,vest,mAP50,0.7534,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,vest,mAP50_95,0.363,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_on_CHV,E1x,960,CHV,test,all,inference_ms_per_image,16.8623,"cross-dataset, never trained on CHV",2026-11-22T01:15:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,all,precision,0.8457,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,all,recall,0.778,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,all,mAP50,0.8454,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,all,mAP50_95,0.4363,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,person,precision,0.8334,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,person,recall,0.8747,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,person,mAP50,0.8851,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,person,mAP50_95,0.4522,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,helmet,precision,0.9281,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,helmet,recall,0.7309,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,helmet,mAP50,0.8689,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,helmet,mAP50_95,0.4689,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,vest,precision,0.7756,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,vest,recall,0.7284,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,vest,mAP50,0.7823,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,vest,mAP50_95,0.3878,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2,E2_E1x_TTA_on_CHV,E1x+TTA,960,CHV,test,all,inference_ms_per_image,37.6373,cross-dataset + test-time augmentation,2026-11-22T01:16:55
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,all,precision,0.9286,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,all,recall,0.8,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,all,mAP50,0.8914,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,all,mAP50_95,0.628,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,person,precision,0.9135,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,person,recall,0.9148,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,person,mAP50,0.9468,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,person,mAP50_95,0.7729,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,helmet,precision,0.9782,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,helmet,recall,0.6531,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,helmet,mAP50,0.8554,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,helmet,mAP50_95,0.6178,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,vest,precision,0.9688,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,vest,recall,0.7316,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,vest,mAP50,0.8694,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,vest,mAP50_95,0.5879,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,gloves,precision,0.8874,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,gloves,recall,0.7655,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,gloves,mAP50,0.8329,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,gloves,mAP50_95,0.6363,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,glasses,precision,0.8949,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,glasses,recall,0.9353,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,glasses,mAP50,0.9524,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,glasses,mAP50_95,0.5249,"cross-dataset, never trained on it",2026-11-22T01:17:25
+E2b,E2b_E1x_on_CPPE,E1x,960,Construction-PPE,test,all,inference_ms_per_image,17.2196,"cross-dataset, never trained on it",2026-11-22T01:17:25

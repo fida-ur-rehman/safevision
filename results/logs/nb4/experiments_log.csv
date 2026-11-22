@@ -1,0 +1,66 @@
+experiment,run,method,chunk_words,emb_model,dataset,metric,value,notes,timestamp
+E6a,E6a_BM25_200w,BM25,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.5938,,2026-11-19T20:01:38
+E6a,E6a_BM25_200w,BM25,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.6875,,2026-11-19T20:01:38
+E6a,E6a_BM25_200w,BM25,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.75,,2026-11-19T20:01:38
+E6a,E6a_BM25_200w,BM25,200,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.6497,,2026-11-19T20:01:38
+E6a,E6a_BM25_200w,BM25,200,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,2.0335,,2026-11-19T20:01:38
+E6a,E6a_dense_200w,dense,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.5312,,2026-11-19T20:01:39
+E6a,E6a_dense_200w,dense,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.75,,2026-11-19T20:01:39
+E6a,E6a_dense_200w,dense,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.8125,,2026-11-19T20:01:39
+E6a,E6a_dense_200w,dense,200,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.6571,,2026-11-19T20:01:39
+E6a,E6a_dense_200w,dense,200,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,13.1761,,2026-11-19T20:01:39
+E6a,E6a_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.5625,,2026-11-19T20:01:39
+E6a,E6a_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.75,,2026-11-19T20:01:39
+E6a,E6a_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.8438,,2026-11-19T20:01:39
+E6a,E6a_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.6811,,2026-11-19T20:01:39
+E6a,E6a_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,14.8602,,2026-11-19T20:01:39
+E6a,E6a_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.5938,,2026-11-19T20:01:53
+E6a,E6a_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.8125,,2026-11-19T20:01:53
+E6a,E6a_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.875,,2026-11-19T20:01:53
+E6a,E6a_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.7031,,2026-11-19T20:01:53
+E6a,E6a_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,431.2966,,2026-11-19T20:01:53
+E6b,E6b_hybrid (RRF)_100w,hybrid (RRF),100,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.625,,2026-11-19T20:02:07
+E6b,E6b_hybrid (RRF)_100w,hybrid (RRF),100,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.75,,2026-11-19T20:02:07
+E6b,E6b_hybrid (RRF)_100w,hybrid (RRF),100,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.875,,2026-11-19T20:02:07
+E6b,E6b_hybrid (RRF)_100w,hybrid (RRF),100,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.7172,,2026-11-19T20:02:07
+E6b,E6b_hybrid (RRF)_100w,hybrid (RRF),100,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,19.2936,,2026-11-19T20:02:07
+E6b,E6b_hybrid + re-ranker_100w,hybrid + re-ranker,100,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.5625,,2026-11-19T20:02:15
+E6b,E6b_hybrid + re-ranker_100w,hybrid + re-ranker,100,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.7812,,2026-11-19T20:02:15
+E6b,E6b_hybrid + re-ranker_100w,hybrid + re-ranker,100,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.8438,,2026-11-19T20:02:15
+E6b,E6b_hybrid + re-ranker_100w,hybrid + re-ranker,100,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.6722,,2026-11-19T20:02:15
+E6b,E6b_hybrid + re-ranker_100w,hybrid + re-ranker,100,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,264.4534,,2026-11-19T20:02:15
+E6b,E6b_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.5625,,2026-11-19T20:02:25
+E6b,E6b_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.75,,2026-11-19T20:02:25
+E6b,E6b_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.8438,,2026-11-19T20:02:25
+E6b,E6b_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.6811,,2026-11-19T20:02:25
+E6b,E6b_hybrid (RRF)_200w,hybrid (RRF),200,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,17.0322,,2026-11-19T20:02:25
+E6b,E6b_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.5938,,2026-11-19T20:02:41
+E6b,E6b_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.8125,,2026-11-19T20:02:41
+E6b,E6b_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.875,,2026-11-19T20:02:41
+E6b,E6b_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.7031,,2026-11-19T20:02:41
+E6b,E6b_hybrid + re-ranker_200w,hybrid + re-ranker,200,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,472.4442,,2026-11-19T20:02:41
+E6b,E6b_hybrid (RRF)_400w,hybrid (RRF),400,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.625,,2026-11-19T20:02:46
+E6b,E6b_hybrid (RRF)_400w,hybrid (RRF),400,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.75,,2026-11-19T20:02:46
+E6b,E6b_hybrid (RRF)_400w,hybrid (RRF),400,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.9062,,2026-11-19T20:02:46
+E6b,E6b_hybrid (RRF)_400w,hybrid (RRF),400,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.7182,,2026-11-19T20:02:46
+E6b,E6b_hybrid (RRF)_400w,hybrid (RRF),400,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,14.5087,,2026-11-19T20:02:46
+E6b,E6b_hybrid + re-ranker_400w,hybrid + re-ranker,400,BAAI/bge-small-en-v1.5,built-in questions,Recall@1,0.5938,,2026-11-19T20:03:08
+E6b,E6b_hybrid + re-ranker_400w,hybrid + re-ranker,400,BAAI/bge-small-en-v1.5,built-in questions,Recall@3,0.8438,,2026-11-19T20:03:08
+E6b,E6b_hybrid + re-ranker_400w,hybrid + re-ranker,400,BAAI/bge-small-en-v1.5,built-in questions,Recall@5,0.875,,2026-11-19T20:03:08
+E6b,E6b_hybrid + re-ranker_400w,hybrid + re-ranker,400,BAAI/bge-small-en-v1.5,built-in questions,MRR@10,0.731,,2026-11-19T20:03:08
+E6b,E6b_hybrid + re-ranker_400w,hybrid + re-ranker,400,BAAI/bge-small-en-v1.5,built-in questions,ms_per_query,665.3154,,2026-11-19T20:03:08
+E6c,E6c_dense_200w,dense,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,Recall@1,0.5,,2026-11-19T20:03:18
+E6c,E6c_dense_200w,dense,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,Recall@3,0.8438,,2026-11-19T20:03:18
+E6c,E6c_dense_200w,dense,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,Recall@5,0.875,,2026-11-19T20:03:18
+E6c,E6c_dense_200w,dense,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,MRR@10,0.6687,,2026-11-19T20:03:18
+E6c,E6c_dense_200w,dense,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,ms_per_query,11.6302,,2026-11-19T20:03:18
+E6c,E6c_hybrid (RRF)_200w,hybrid (RRF),200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,Recall@1,0.625,,2026-11-19T20:03:18
+E6c,E6c_hybrid (RRF)_200w,hybrid (RRF),200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,Recall@3,0.7188,,2026-11-19T20:03:18
+E6c,E6c_hybrid (RRF)_200w,hybrid (RRF),200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,Recall@5,0.8438,,2026-11-19T20:03:18
+E6c,E6c_hybrid (RRF)_200w,hybrid (RRF),200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,MRR@10,0.7112,,2026-11-19T20:03:18
+E6c,E6c_hybrid (RRF)_200w,hybrid (RRF),200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,ms_per_query,9.9388,,2026-11-19T20:03:18
+E6c,E6c_hybrid + re-ranker_200w,hybrid + re-ranker,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,Recall@1,0.5938,,2026-11-19T20:03:35
+E6c,E6c_hybrid + re-ranker_200w,hybrid + re-ranker,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,Recall@3,0.8125,,2026-11-19T20:03:35
+E6c,E6c_hybrid + re-ranker_200w,hybrid + re-ranker,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,Recall@5,0.875,,2026-11-19T20:03:35
+E6c,E6c_hybrid + re-ranker_200w,hybrid + re-ranker,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,MRR@10,0.707,,2026-11-19T20:03:35
+E6c,E6c_hybrid + re-ranker_200w,hybrid + re-ranker,200,sentence-transformers/all-MiniLM-L6-v2,built-in questions,ms_per_query,523.8191,,2026-11-19T20:03:35

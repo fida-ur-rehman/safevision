@@ -1,0 +1,21 @@
+experiment,run,model,dataset,split,metric,value,notes,timestamp
+E11a,E11a_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,BLEU4,0.0801,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11a,E11a_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,ROUGE_L,0.2612,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11a,E11a_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,CIDEr,0.0476,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11a,E11a_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,BERTScore_F1,0.3284,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11b,E11b_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,ppe_precision,0.7423,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11b,E11b_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,ppe_recall,0.8231,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11b,E11b_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,ppe_F1,0.7806,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11b,E11b_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,ppe_invented_pct,14.6,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11a,E11a_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,words_per_caption,87.81,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11c,E11c_pretrained,Florence-2-base (pretrained),ConstructionSite10k,test,ms_per_image,320.0,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11a,E11a_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,BLEU4,0.1343,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11a,E11a_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,ROUGE_L,0.2984,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11a,E11a_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,CIDEr,0.1527,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11a,E11a_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,BERTScore_F1,0.4093,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11b,E11b_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,ppe_precision,0.6455,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11b,E11b_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,ppe_recall,0.8299,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11b,E11b_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,ppe_F1,0.7262,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11b,E11b_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,ppe_invented_pct,21.4,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11a,E11a_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,words_per_caption,52.494,"500 test photos, 3 beams",2026-11-22T01:17:48
+E11c,E11c_fine-tuned,Florence-2-base (fine-tuned CS10k),ConstructionSite10k,test,ms_per_image,245.2,"500 test photos, 3 beams",2026-11-22T01:17:48

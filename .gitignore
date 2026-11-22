@@ -1,0 +1,33 @@
+# --- secrets (never commit) ---
+.env
+.env.local
+**/.env
+**/.env.local
+
+# --- environments and build output (recreated by pip / npm) ---
+.venv/
+.venv-*/
+**/.venv/
+**/.venv-*/
+node_modules/
+.next/
+__pycache__/
+*.pyc
+
+# --- large or generated files (models are on Hugging Face: python backend/scripts/get_models.py) ---
+backend/models/
+backend/data/
+*.pt
+*.safetensors
+*.faiss
+_incoming/
+_archive/
+test_results/
+results/raw/
+*.zip
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

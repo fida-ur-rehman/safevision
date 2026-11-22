@@ -1,0 +1,22 @@
+# SafeVision backend (Python 3.10+). For a GPU, install the CUDA build of torch first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pillow>=10
+ultralytics>=8.3
+torch>=2.2
+transformers==4.57.6          # tested with torch 2.5.1 on a GTX 1050; needed for the Florence-2 captioner
+sentence-transformers==5.7.0
+faiss-cpu>=1.8
+rank-bm25>=0.2.2
+pandas>=2.1
+pyarrow>=15
+numpy>=1.26
+requests>=2.31
+huggingface_hub>=0.24
+python-dotenv>=1.0
+shap>=0.46
+lime==0.2.0.1
+captum>=0.7
+matplotlib>=3.8

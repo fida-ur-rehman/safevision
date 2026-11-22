@@ -1,0 +1,71 @@
+experiment,run,model,imgsz,dataset,split,class_name,metric,value,notes,timestamp
+E3,E3a_box_matching,detector+box,960,ConstructionSite10k,test,helmet,precision,0.2234,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3a_box_matching,detector+box,960,ConstructionSite10k,test,helmet,recall,0.7536,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3a_box_matching,detector+box,960,ConstructionSite10k,test,helmet,F1,0.3447,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3a_box_matching,detector+box,960,ConstructionSite10k,test,helmet,accuracy,0.7324,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3a_box_matching,detector+box,960,ConstructionSite10k,test,helmet,TP,208.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3a_box_matching,detector+box,960,ConstructionSite10k,test,helmet,FP,723.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3a_box_matching,detector+box,960,ConstructionSite10k,test,helmet,FN,68.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3a_box_matching,detector+box,960,ConstructionSite10k,test,helmet,TN,1957.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3a_box_matching,detector+box,960,ConstructionSite10k,test,helmet,n,2956.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3b_pose_matching,detector+pose,960,ConstructionSite10k,test,helmet,precision,0.2222,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3b_pose_matching,detector+pose,960,ConstructionSite10k,test,helmet,recall,0.7536,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3b_pose_matching,detector+pose,960,ConstructionSite10k,test,helmet,F1,0.3432,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3b_pose_matching,detector+pose,960,ConstructionSite10k,test,helmet,accuracy,0.7307,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3b_pose_matching,detector+pose,960,ConstructionSite10k,test,helmet,TP,208.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3b_pose_matching,detector+pose,960,ConstructionSite10k,test,helmet,FP,728.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3b_pose_matching,detector+pose,960,ConstructionSite10k,test,helmet,FN,68.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3b_pose_matching,detector+pose,960,ConstructionSite10k,test,helmet,TN,1952.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3b_pose_matching,detector+pose,960,ConstructionSite10k,test,helmet,n,2956.0,"conf_yes=0.25, conf_no=0.6; other_rule1 excluded",2026-11-19T15:55:19
+E3,E3c_localisation_box,detector+box,960,ConstructionSite10k,test,helmet,iou50_hit_rate,0.2423,,2026-11-19T15:55:19
+E3,E3c_localisation_box,detector+box,960,ConstructionSite10k,test,helmet,centre_hit_rate,0.5493,,2026-11-19T15:55:19
+E3,E3c_localisation_box,detector+box,960,ConstructionSite10k,test,helmet,n_boxes,355.0,,2026-11-19T15:55:19
+E3,E3c_localisation_pose,detector+pose,960,ConstructionSite10k,test,helmet,iou50_hit_rate,0.2479,,2026-11-19T15:55:19
+E3,E3c_localisation_pose,detector+pose,960,ConstructionSite10k,test,helmet,centre_hit_rate,0.5493,,2026-11-19T15:55:19
+E3,E3c_localisation_pose,detector+pose,960,ConstructionSite10k,test,helmet,n_boxes,355.0,,2026-11-19T15:55:19
+E3,E3d_white_hat_box,detector+box,960,ConstructionSite10k,test,helmet,recall,0.5536,392 boxes,2026-11-19T15:55:19
+E3,E3d_white_hat_pose,detector+pose,960,ConstructionSite10k,test,helmet,recall,0.5306,392 boxes,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=night,precision,0.5,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=night,recall,0.8,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=night,F1,0.6154,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=night,n,28.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=normal lighting,precision,0.2334,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=normal lighting,recall,0.7818,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=normal lighting,F1,0.3595,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=normal lighting,n,2398.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=overexposed,precision,0.1148,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=overexposed,recall,0.5385,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=overexposed,F1,0.1892,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=overexposed,n,153.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=underexposed,precision,0.2,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=underexposed,recall,0.6579,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=underexposed,F1,0.3067,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,illumination=underexposed,n,377.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=long distance,precision,0.1648,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=long distance,recall,0.6522,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=long distance,F1,0.2632,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=long distance,n,334.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=mid distance,precision,0.1696,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=mid distance,recall,0.7227,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=mid distance,F1,0.2748,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=mid distance,n,1284.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=short distance,precision,0.3213,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=short distance,recall,0.7985,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=short distance,F1,0.4582,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,camera_distance=short distance,n,1337.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,view=elevation view,precision,0.2237,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,view=elevation view,recall,0.7601,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,view=elevation view,F1,0.3456,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,view=elevation view,n,2851.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,view=plan view,precision,0.2,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,view=plan view,recall,0.4,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,view=plan view,F1,0.2667,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,view=plan view,n,105.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,quality_of_info=poor info,precision,0.3088,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,quality_of_info=poor info,recall,0.7415,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,quality_of_info=poor info,F1,0.436,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,quality_of_info=poor info,n,1685.0,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,quality_of_info=rich info,precision,0.1713,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,quality_of_info=rich info,recall,0.7674,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,quality_of_info=rich info,F1,0.2801,,2026-11-19T15:55:20
+E4,E4_box,detector+box,960,ConstructionSite10k,test,quality_of_info=rich info,n,1271.0,,2026-11-19T15:55:20
