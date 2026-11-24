@@ -42,6 +42,7 @@ export interface Counts {
 }
 
 export interface Result {
+  scene?: SceneCheck | null;
   id: string;
   created: string;
   filename: string;
@@ -102,10 +103,11 @@ async function handle<T>(r: Response): Promise<T> {
 
 const json = (body: unknown) => ({ method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
 
-export const analyze = (file: File, factCheck = true) => {
+export interface SceneCheck { is_site: boolean; site_score: number; best_match: string; threshold: number }
+export const analyze = (file: File, factCheck = true, force = false) => {
   const fd = new FormData();
   fd.append("file", file);
-  return fetch(`${API}/analyze?fact_check=${factCheck}`, { method: "POST", body: fd }).then(handle<Result>);
+  return fetch(`${API}/analyze?fact_check=${factCheck}&force=${force}`, { method: "POST", body: fd }).then(handle<Result>);
 };
 export const analyzeIncident = (text: string, method?: string) =>
   fetch(`${API}/incident-analysis`, json({ text, method })).then(handle<IncidentResult>);

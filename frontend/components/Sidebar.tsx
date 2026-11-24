@@ -16,7 +16,7 @@ const NAV = [
 // Friendly names for the backend components listed by /health
 const COMPONENTS: Record<string, string> = {
   detector: "PPE detector", pose: "Pose model", classifier: "Accident classifier", explainer: "Word explanations",
-  rules: "Rule search", similar_accidents: "Similar accidents", captioner: "Scene captions", fact_checker: "Fact checker", llm: "Report writer",
+  rules: "Rule search", similar_accidents: "Similar accidents", captioner: "Scene captions", fact_checker: "Fact checker", llm: "Report writer", scene_check: "Scene check",
 };
 
 export default function Sidebar() {

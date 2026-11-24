@@ -212,3 +212,7 @@ mark.m-bad { text-decoration-color: var(--bad); background: var(--bad-bg); }
   .items details:not([open]) > *:not(summary) { display: block; }
   h2 { break-after: avoid; }
 }
+
+/* scene check: photo does not look like a work site */
+.scene-warn { margin-top: 14px; padding: 14px 16px; border-radius: 10px; background: var(--warn-bg); color: var(--warn); border: 1px solid #f0d29a; }
+.scene-warn p { margin: 6px 0 10px; color: inherit; }

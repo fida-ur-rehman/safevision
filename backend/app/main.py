@@ -66,6 +66,9 @@ def db():
 def load_models():
     global pipe
     pipe = Pipeline()
+    for name, state in pipe.status.items():          # make a missing component visible in the terminal
+        if isinstance(state, str) and state != "ok" and name not in ("xai_method", "llm_backend"):
+            print(f"WARNING: {name} not loaded -> {state}")
     if os.environ.get("WARM_UP", "1") == "1":      # set WARM_UP=0 to skip and start faster
         print("Warming up models:", pipe.warm_up())
 
@@ -76,7 +79,7 @@ def health():
 
 
 @app.post("/analyze")
-async def analyze(file: UploadFile = File(...), fact_check: bool = True):
+async def analyze(file: UploadFile = File(...), fact_check: bool = True, force: bool = False):
     if not (file.content_type or "").startswith("image/"):
         raise HTTPException(400, "Please upload an image file (JPG or PNG).")
     try:
@@ -84,6 +87,10 @@ async def analyze(file: UploadFile = File(...), fact_check: bool = True):
     except Exception:
         raise HTTPException(400, "The file could not be read as an image.")
     img.thumbnail((MAX_SIDE, MAX_SIDE))
+    # Scene check first: a selfie or a classroom is not a work site. The user can still choose "Analyse anyway" (force).
+    scene = pipe.scene.check(img) if getattr(pipe, "scene", None) else None
+    if scene and not scene["is_site"] and not force:
+        raise HTTPException(422, {"code": "not_a_site", **scene})
     try:
         result = clean(pipe.analyze(img, fact_check=fact_check))
     except RuntimeError as e:
@@ -92,6 +99,7 @@ async def analyze(file: UploadFile = File(...), fact_check: bool = True):
     regions = result.pop("privacy_regions", [])
     blur = os.environ.get("BLUR_FACES", "1") != "0"           # privacy: stored photos have faces blurred
     (blur_regions(img, regions) if blur and regions else img).save(DATA / "images" / f"{iid}.jpg", quality=90)
+    result["scene"] = scene
     result["privacy"] = {"faces_blurred": len(regions) if blur else 0, "blur_on": blur}
     result.update(id=iid, created=datetime.datetime.now().isoformat(timespec="seconds"), filename=file.filename)
     with db() as con:

@@ -52,6 +52,9 @@ class Pipeline:
         self.status["xai_method"] = self.xai_method
         self.captioner = self._load("captioner", lambda: __import__("app.caption", fromlist=["x"]).Captioner(
             MODELS / "florence2_captioner", device=self.device), MODELS / "florence2_captioner")
+        self.scene = self._load("scene_check", lambda: __import__("app.scene", fromlist=["x"]).SceneCheck(
+            device=os.environ.get("SCENE_DEVICE", "cpu"), threshold=float(os.environ.get("SCENE_MIN", 0.5)))
+            ) if os.environ.get("SCENE_CHECK", "1") == "1" else None
         self.checker = self._load("fact_checker", lambda: self._gpu_or_cpu(lambda dev: FactChecker(
             os.environ.get("NLI_MODEL", "cross-encoder/nli-deberta-v3-base"), device=dev)))
         backend = os.environ.get("LLM_BACKEND", "groq" if os.environ.get("GROQ_API_KEY") else "template")
@@ -64,6 +67,7 @@ class Pipeline:
         from PIL import Image
         img, took = Image.new("RGB", (640, 480), (128, 128, 128)), {}
         steps = [
+            ("scene_check", lambda: self.scene.check(img)),
             ("detector", lambda: self.detector.predict(img, imgsz=self.imgsz, conf=0.10, device=self.device, verbose=False)),
             ("captioner", lambda: self.captioner.caption(img)),
             ("classifier", lambda: self.classifier.predict("A worker stands on a ladder without a hard hat.")),
@@ -72,7 +76,7 @@ class Pipeline:
             ("fact_checker", lambda: self.checker.check("Workers must wear hard hats.", ["Employees shall wear protective helmets."])),
         ]
         for name, run in steps:
-            if getattr(self, {"similar_accidents": "similar", "fact_checker": "checker"}.get(name, name), None) is None:
+            if getattr(self, {"similar_accidents": "similar", "fact_checker": "checker", "scene_check": "scene"}.get(name, name), None) is None:
                 continue
             t0 = time.time()
             try:
