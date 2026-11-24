@@ -52,6 +52,21 @@ photo ─► YOLO11s 8-class detector ─► zoom re-check of each worker ─►
 | `06_explainability_incident_analysis` | SHAP vs LIME vs Integrated Gradients, ERASER faithfulness | E10 |
 | `07_florence2_caption_finetune` | Fine-tunes Florence-2-base on ConstructionSite captions | E11 |
 
+**Why some notebooks look unused.** Every notebook is used: either it produced a model the app loads, or it produced
+a baseline that the final model is compared against.
+
+| Notebook | Its role | What the app loads from it |
+|---|---|---|
+| `01` (4-class) | First detector = **baseline** for the 8-class model (ablation: 4 vs 8 classes, 640 vs 960 px) | nothing (kept as `detector_best_4class.pt`) |
+| `01x` (8-class) | **Final detector** | `detector_best.pt` |
+| `02` | First benchmark run + **box vs pose** ablation (box won, so pose is not used) | `matching_thresholds.json` |
+| `02x` | Gloves, glasses and **zoom re-check** tuning | `matching_thresholds_ppe8.json` |
+| `02z` | **Final system** on the benchmark (F1 0.36 without zoom, 0.41 with zoom) | nothing (evaluation only) |
+| `03` to `07` | NLP models, rule search, report checking, explanations, captions | classifier, indexes, LIME choice, Florence-2 |
+
+**Report LLM.** Experiment E8 (Notebook 5) was measured with Llama 3.1 8B. Groq later retired that model, so the app now
+uses `openai/gpt-oss-20b` on Groq with the same prompt, rule search and fact checker. E8 has not yet been re-run with it.
+
 Headline numbers and all ablations: `results/SafeVision_Results.xlsx` (rebuild with `python scripts/merge_results.py`).
 Notebooks need a GPU and the secret `HF_TOKEN`; Notebook 5 also needs `GROQ_API_KEY`. Keys live only in Colab or Kaggle
 Secrets and in `backend/.env`, never in the code.
