@@ -13,10 +13,11 @@ export default function SavedInspection() {
   useEffect(() => { getIncident(id).then(setR).catch((e) => setError(`Could not open this inspection: ${e.message ?? e}`)); }, [id]);
   return (
     <>
-      <header className="page-head no-print">
-        <div><p style={{ margin: 0 }}><Link href="/history">History</Link></p><h1>{r ? r.filename : "Inspection"}</h1>
-          {r && <p>{new Date(r.created).toLocaleString()}</p>}</div>
-      </header>
+      <div className="intro">
+        <p className="crumb no-print"><Link href="/history">History</Link></p>
+        <h1>{r ? r.filename : "Inspection"}</h1>
+        {r && <p>Inspected {new Date(r.created).toLocaleString()}</p>}
+      </div>
       {error && <p className="error">{error}</p>}
       {r ? <ResultView r={r} imageSrc={imageUrl(r.id)} /> : !error && <p className="muted">Loading…</p>}
     </>

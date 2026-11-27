@@ -30,7 +30,7 @@ photo ─► YOLO11s 8-class detector ─► zoom re-check of each worker ─►
 |---|---|
 | `notebooks/` | Training and evaluation notebooks (Colab or Kaggle). Every cell has a heading and explanation; each notebook ends with its references. |
 | `backend/` | FastAPI API (`app/main.py`) and the pipeline modules. They are the **same code** that the notebooks evaluate. |
-| `frontend/` | Next.js web app: Inspect a photo, Incident analysis, Rules assistant, History, PDF export. |
+| `frontend/` | Next.js web app: Inspect photo, Incident analysis, Rules, History, PDF export. |
 | `results/` | `SafeVision_Results.xlsx` (Summary, Ablations, per-class detector results) and the raw experiment logs. |
 | `scripts/` | `merge_results.py` (rebuilds the results workbook), `export_test_photos.py`, `batch_test.py`. |
 | `docs/` | Data contract examples (JSON passed between the vision and NLP steps), report and presentation. |

@@ -8,7 +8,7 @@ export default function WordExplanation({ e, hidden }: { e: Explanation; hidden:
       <p className="words">
         {e.words.map((w, i) => {
           const s = e.scores[i] ?? 0; const a = Math.min(1, Math.abs(s) / max) * 0.6;
-          const bg = s > 0 ? `rgba(23,115,74,${a})` : `rgba(196,43,28,${a})`;
+          const bg = s > 0 ? `rgba(19,128,74,${a})` : `rgba(200,16,46,${a})`;
           return <span key={i}><span className="w" style={{ background: a > 0.03 ? bg : undefined }} title={`${w}: ${s.toFixed(3)}`}>{w}</span> </span>;
         })}
       </p>

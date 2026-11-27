@@ -3,7 +3,7 @@
 // written only from the retrieved rules and checked sentence by sentence.
 import { useState } from "react";
 import { ask, type Answer } from "@/lib/api";
-import { RuleList } from "@/components/Shared";
+import { RuleList, Section } from "@/components/Shared";
 
 const EXAMPLES = [
   "When is fall protection required?",
@@ -28,33 +28,29 @@ export default function AskPage() {
 
   return (
     <>
-      <header className="page-head">
-        <div>
-          <h1>Rules assistant</h1>
-          <p>Ask a safety question in plain words. The answer uses only the rules found, and cites them by section.</p>
-        </div>
-      </header>
-      <section className="panel">
+      <div className="intro">
+        <h1>Rules</h1>
+        <p>Ask a safety question in plain words. The rule books are searched by keywords and by meaning, and the short answer
+          is written only from the rules found, with each sentence checked against them.</p>
+      </div>
+      <section className="intake intake-text">
         <form className="askbar" onSubmit={(e) => { e.preventDefault(); go(q); }}>
           <label htmlFor="q" className="visually-hidden">Question</label>
           <input id="q" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Is a hard hat required near a crane?" />
-          <button className="btn" disabled={busy || !q.trim()}>{busy ? "Searching…" : "Ask"}</button>
+          <button className="btn" disabled={busy || !q.trim()}>{busy ? "Searching" : "Search rules"}</button>
         </form>
-        <div className="examples">{EXAMPLES.map((x) => <button key={x} className="example" onClick={() => go(x)}>{x}</button>)}</div>
-        {error && <p className="error" style={{ marginTop: 14 }}>{error}</p>}
+        <div className="examples"><span>Examples:</span>{EXAMPLES.map((x) => <button key={x} className="example" onClick={() => go(x)}>{x}</button>)}</div>
       </section>
+      {error && <p className="error">{error}</p>}
       {a && (
-        <>
+        <div className="result">
           {a.answer && (
-            <section className="panel" style={{ marginTop: 16 }}>
-              <div className="panel-head"><h2>Answer</h2>
-                {a.checks.length > 0 && <span className={`chip ${backed === a.checks.length ? "chip-ok" : "chip-warn"}`}>{backed} of {a.checks.length} sentences backed by the rules</span>}
-              </div>
+            <Section title="Answer" aside={a.checks.length > 0 ? <span className="score"><span className={backed === a.checks.length ? "s-ok" : "s-warn"}>{backed} of {a.checks.length} sentences supported by the rules</span></span> : undefined}>
               <p className="answer">{a.answer}</p>
-            </section>
+            </Section>
           )}
-          <section className="panel" style={{ marginTop: 16 }}><h2>Rules found</h2><RuleList rules={a.rules} openFirst /></section>
-        </>
+          <Section title="Rules found" source="Hybrid search: BM25 keywords and embeddings, fused by reciprocal rank and re-ranked by a cross-encoder."><RuleList rules={a.rules} openFirst /></Section>
+        </div>
       )}
     </>
   );
