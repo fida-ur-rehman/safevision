@@ -34,3 +34,7 @@ Thumbs.db
 
 # TypeScript build cache
 *.tsbuildinfo
+
+# --- kept local only (gated dataset images, personal details) ---
+test_photos/
+docs/SafeVision_Report_Final.docx

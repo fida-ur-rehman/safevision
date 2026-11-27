@@ -1,7 +1,7 @@
 """Checks the backend set-up: loads every SafeVision model the app uses and captions one test photo.
 
 Nothing is changed or saved. Run from the backend folder:
-    python scripts/check_env.py ../test_photos/helmet_violation_01.jpg
+    python scripts/check_env.py <photo.jpg>
 Uses the same device set-up as the app.
 """
 import sys, time, traceback

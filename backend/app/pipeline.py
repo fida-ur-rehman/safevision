@@ -62,7 +62,7 @@ class Pipeline:
         self.status["llm_backend"] = backend if self.llm else "template"
 
     def warm_up(self):
-        """Run every model once on dummy input so the first real request is fast (GPU kernels, caches).
+        """Run every model once on a blank image so the first real request is fast (GPU kernels, caches).
         Each step is optional: a failure is recorded in status and never stops the server."""
         from PIL import Image
         img, took = Image.new("RGB", (640, 480), (128, 128, 128)), {}

@@ -33,26 +33,24 @@ photo ─► YOLO11s 8-class detector ─► zoom re-check of each worker ─►
 | `frontend/` | Next.js web app: Inspect a photo, Incident analysis, Rules assistant, History, PDF export. |
 | `results/` | `SafeVision_Results.xlsx` (Summary, Ablations, per-class detector results) and the raw experiment logs. |
 | `scripts/` | `merge_results.py` (rebuilds the results workbook), `export_test_photos.py`, `batch_test.py`. |
-| `tests/` | Smoke tests: each notebook runs end to end on small fake data on a CPU (`python tests/test_nb.py <notebook> <fake_module>`). |
-| `docs/` | Data contract examples and the NLP hand-over notes. |
-| `test_photos/` | 16 ConstructionSite test photos with the expert labels (`expected_labels.csv`). |
+| `docs/` | Data contract examples (JSON passed between the vision and NLP steps), report and presentation. |
 
 ## Notebooks and experiments
 
 | Notebook | What it does | Experiments |
 |---|---|---|
-| `01_vision_detector` | 4-class detector (person, head, helmet, vest), SH17 | E1 (image size, test-time augmentation), E2 (CHV, never trained on) |
-| `01x_ppe8_detector` | **8-class detector** (+ hands, gloves, face, glasses), used by the app | E1x, E2 (CHV), E2b (Construction-PPE) |
-| `02_worker_matching_constructionsite` | Box vs pose matching of PPE to workers, ConstructionSite 10k | E3a-d, E4 (robustness) |
-| `02x_ppe8_worker_matching` | Gloves / glasses / hard hat / vest per photo + zoom re-check, Construction-PPE | E3x |
-| `02z_final_system_constructionsite` | The final vision system on the E3 benchmark | E3e, E3f, E4z |
-| `03_accident_text_classifier_and_search` | DistilBERT multi-task classifier + similar-accident search, OSHA Severe Injury Reports | E5, E7 |
-| `04_rule_search_rag` | Hybrid rule search over OSHA 1926 and the Dubai guide | E6a-c |
-| `05_report_writer_fact_check` | Report variants V0-V3 and the NLI fact checker | E8a-c, E9 |
-| `06_explainability_incident_analysis` | SHAP vs LIME vs Integrated Gradients, ERASER faithfulness | E10 |
-| `07_florence2_caption_finetune` | Fine-tunes Florence-2-base on ConstructionSite captions | E11 |
+| `01-vision-detector` | 4-class detector (person, head, helmet, vest), SH17 | E1 (image size, test-time augmentation), E2 (CHV, never trained on) |
+| `01x-ppe8-detector` | **8-class detector** (+ hands, gloves, face, glasses), used by the app | E1x, E2 (CHV), E2b (Construction-PPE) |
+| `02-worker-matching-constructionsite` | Box vs pose matching of PPE to workers, ConstructionSite 10k | E3a-d, E4 (robustness) |
+| `02x-ppe8-worker-matching` | Gloves / glasses / hard hat / vest per photo + zoom re-check, Construction-PPE | E3x |
+| `02z-final-system-constructionsite` | The final vision system on the E3 benchmark | E3e, E3f, E4z |
+| `03-accident-text-classifier-and-search` | DistilBERT multi-task classifier + similar-accident search, OSHA Severe Injury Reports | E5, E7 |
+| `04-rule-search-rag` | Hybrid rule search over OSHA 1926 and the Dubai guide | E6a-c |
+| `05-report-writer-fact-check` | Report variants V0-V3 and the NLI fact checker | E8a-c, E9 |
+| `06-explainability-incident-analysis` | SHAP vs LIME vs Integrated Gradients, ERASER faithfulness | E10 |
+| `07-florence2-caption-finetune` | Fine-tunes Florence-2-base on ConstructionSite captions | E11 |
 
-**Why some notebooks look unused.** Every notebook is used: either it produced a model the app loads, or it produced
+**How the notebooks fit together.** Every notebook is used: either it produced a model the app loads, or it produced
 a baseline that the final model is compared against.
 
 | Notebook | Its role | What the app loads from it |
@@ -83,8 +81,8 @@ python -m venv .venv
 pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121   # GPU; skip for CPU
 pip install -r requirements.txt
 python scripts/get_models.py              # downloads the trained models (about 1.2 GB, no account needed)
-copy .env.example .env                    # then paste a free Groq key into .env (or set LLM_BACKEND=template)
-python scripts/check_env.py ../test_photos/helmet_violation_01.jpg   # optional: checks every model loads
+copy .env.example .env                    # set GROQ_API_KEY in .env (or LLM_BACKEND=template)
+python scripts/check_env.py <photo.jpg>  # optional: checks every model loads
 uvicorn app.main:app --port 8000
 
 # 2) frontend (second terminal, Node 18+)
@@ -105,5 +103,6 @@ npm run dev                               # open http://localhost:3000
 ## Trained models and data
 
 The trained models are on Hugging Face (`Cypher4455/safevision-models`), shared for non-commercial research and education
-because one training set (ConstructionSite 10k) is CC BY-NC 4.0. Datasets: SH17, CHV, Ultralytics Construction-PPE,
+because one training set (ConstructionSite 10k) is CC BY-NC 4.0. ConstructionSite 10k is a gated dataset, so its photos
+are not included in this repository; `scripts/export_test_photos.py` downloads test photos after access is granted on Hugging Face. Datasets: SH17, CHV, Ultralytics Construction-PPE,
 ConstructionSite 10k, OSHA Severe Injury Reports, OSHA 29 CFR 1926, Dubai Municipality construction safety guide.

@@ -1,7 +1,7 @@
-"""Test the scene check on photos before trusting it in the demo.
+"""Run the construction-scene check on a folder of photos.
 
 Usage (backend folder, venv active):
-    python scripts/check_scene.py ../test_photos              # all 16 site photos should say SITE
+    python scripts/check_scene.py ../test_photos              # every construction photo should say SITE
     python scripts/check_scene.py C:\\path\\to\\other\\photos     # selfies, rooms, streets should say NOT SITE
 Prints one line per photo and a summary. Change the threshold with SCENE_MIN (default 0.5).
 """
