@@ -1,6 +1,6 @@
 // Pieces shared by the Inspect, Incident analysis and Rules pages.
 import type { ReactNode } from "react";
-import type { Check, CheckSummary, Risk, Rule, Similar, Status } from "@/lib/api";
+import type { Check, CheckSummary, Risk, Rule, Similar } from "@/lib/api";
 
 // A titled block of the result. `source` names the model or data behind the block, so every number can be traced.
 export function Section({ title, aside, source, children }: { title: string; aside?: ReactNode; source?: string; children: ReactNode }) {
@@ -13,13 +13,9 @@ export function Section({ title, aside, source, children }: { title: string; asi
   );
 }
 
-const STATUS_TEXT: Record<Status, string> = { yes: "worn", no: "missing", unsure: "unclear", "n/a": "not visible" };
-
-// One cell of the PPE checklist
-export function StatusMark({ status, conf }: { status: Status; conf?: number }) {
-  const sym = { yes: "✓", no: "✕", unsure: "?", "n/a": "" }[status];
-  const tip = STATUS_TEXT[status] + (conf != null && status !== "n/a" ? ` (confidence ${Math.round(conf * 100)}%)` : "");
-  return <span className={`mark mark-${status === "n/a" ? "na" : status}`} title={tip}><span aria-hidden>{sym}</span><span className="visually-hidden">{tip}</span></span>;
+// Names the model or data behind a block, so every number can be traced.
+export function Source({ children }: { children: ReactNode }) {
+  return <p className="source">{children}</p>;
 }
 
 const MARK: Record<Check["label"], string> = { supported: "m-ok", unsupported: "m-warn", contradicted: "m-bad", "invented citation": "m-bad" };

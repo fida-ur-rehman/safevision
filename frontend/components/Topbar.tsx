@@ -7,7 +7,7 @@ import { health, type Health } from "@/lib/api";
 import { IconMark } from "./Icons";
 
 const NAV = [
-  { href: "/", label: "Inspect photo" },
+  { href: "/", label: "Inspect" },
   { href: "/incident", label: "Incident analysis" },
   { href: "/ask", label: "Rules" },
   { href: "/history", label: "History" },
@@ -44,7 +44,7 @@ export default function Topbar() {
         <details className="sys">
           <summary>
             <span className={`led led-${tone}`} />
-            {down ? "Backend offline" : !h ? "Connecting" : `${ready}/${comps.length} models loaded on ${h.device.toUpperCase()}`}
+            {down ? "Backend offline" : !h ? "Connecting" : `${ready}/${comps.length} models on ${h.device.toUpperCase()}`}
           </summary>
           <div className="sys-pop">
             {h ? (

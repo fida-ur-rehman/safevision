@@ -48,26 +48,24 @@ export default function InspectPage() {
   return (
     <>
       <div className="intro">
-        <h1>Site photo inspection</h1>
-        <p>Each worker in the photo is checked for a hard hat, hi-vis vest, gloves and safety glasses. The report cites the
-          safety rules that apply, and every sentence is checked against the evidence.</p>
+        <h1>Inspect a site photo</h1>
+        <p>Finds every worker, checks their hard hat, vest, gloves and safety glasses, and writes a report that cites the rules and is fact-checked sentence by sentence.</p>
       </div>
 
-      <section className="intake no-print">
-        <div className={`drop ${drag ? "drop-on" : ""} ${preview ? "drop-has" : ""}`} role="button" tabIndex={0}
-             onClick={() => input.current?.click()} onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && input.current?.click()}
-             onDragOver={(e) => { e.preventDefault(); setDrag(true); }} onDragLeave={() => setDrag(false)}
-             onDrop={(e) => { e.preventDefault(); setDrag(false); pick(e.dataTransfer.files[0]); }}>
-          {preview ? <img src={preview} alt="Selected photo" /> : <IconUpload />}
-          <div>
-            <strong>{file ? file.name : "Drop a site photo here, or click to choose one"}</strong>
-            <span>{file ? "Click to choose a different photo" : "JPG or PNG, taken on a construction or industrial site"}</span>
-          </div>
-          <input ref={input} type="file" accept="image/*" hidden onChange={(e) => pick(e.target.files?.[0])} />
-        </div>
-        <div className="intake-side">
-          <button className="btn" disabled={!file || busy} onClick={() => run()}>{busy ? `Inspecting ${elapsed.toFixed(1)} s` : "Inspect photo"}</button>
-          <label className="check"><input type="checkbox" checked={factCheck} onChange={(e) => setFactCheck(e.target.checked)} /> Fact-check the report</label>
+      <section className={`drop ${drag ? "drop-on" : ""} ${preview ? "drop-has" : ""} no-print`}
+               onDragOver={(e) => { e.preventDefault(); setDrag(true); }} onDragLeave={() => setDrag(false)}
+               onDrop={(e) => { e.preventDefault(); setDrag(false); pick(e.dataTransfer.files[0]); }}>
+        <button className="drop-pick" onClick={() => input.current?.click()} aria-label={file ? "Choose a different photo" : "Choose a photo"}>
+          {preview ? <img src={preview} alt="" /> : <span className="drop-icon"><IconUpload /></span>}
+          <span className="drop-text">
+            <strong>{file ? file.name : "Drop a site photo, or click to browse"}</strong>
+            <span>{file ? "Click to choose a different photo" : "JPG or PNG from a construction or industrial site"}</span>
+          </span>
+        </button>
+        <input ref={input} type="file" accept="image/*" hidden onChange={(e) => pick(e.target.files?.[0])} />
+        <div className="drop-actions">
+          <label className="check"><input type="checkbox" checked={factCheck} onChange={(e) => setFactCheck(e.target.checked)} /> Fact-check report</label>
+          <button className="btn" disabled={!file || busy} onClick={() => run()}>{busy ? `Inspecting ${elapsed.toFixed(1)}s` : "Inspect"}</button>
         </div>
       </section>
 
@@ -84,7 +82,7 @@ export default function InspectPage() {
           <p>The scene check matched it best to &ldquo;{notSite.best_match.replace(/^a (photo of )?/, "")}&rdquo; (work-site score {Math.round(notSite.site_score * 100)}%, threshold {Math.round(notSite.threshold * 100)}%). PPE rules apply to construction and industrial sites, so the check was not run.</p>
           <div className="row">
             <button className="btn" onClick={() => input.current?.click()}>Choose another photo</button>
-            <button className="btn btn-line" onClick={() => run(true)}>Analyse anyway</button>
+            <button className="btn btn-ghost" onClick={() => run(true)}>Analyse anyway</button>
           </div>
         </div>
       )}
